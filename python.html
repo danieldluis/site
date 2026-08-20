@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="style.css">
  <style>
   p{text-align:justify;color: #ccc; line-height: 1.6;font-size:14px;text-align:justify;margin-left:10px;}
+  .animation1{
+    animation:a1 600ms ease-in;
+  }
+  
+  @keyframes a1{
+  
+  0%{width:300px;}
+  0%{height:300px;}
+  50%{width:600px;}
+  50%{height:500px;}
+  100%{width:1000px;}
+  100%{height:800px;}
+  
+  }
+  
+  
  </style>
 </head>
 <body>
@@ -26,8 +42,7 @@
     <section id="s2" class="features">
 <article id="projetos" class="card" style="background: #1a1a1d; padding: 40px; border-radius: 16px; border: 1px solid #333; transition: transform 0.3s;">
         <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;"> <div style="display:flex;flex-direction:column"> 
-            <iframe loading="lazy" id="if1" onclick=ff1();><iframe id="if2" src="https://www.dailymotion.com/embed/video/k6TOorV7Lt5FwOIWjcy?queue-autoplay-next=0" width="1000" 
-        height="800" allow="fullscreen" frameborder="0"></iframe> </iframe></div>
+            <div id="if1" style="width:200px;height:150px;border:1px solid;display:flex;justify-content:center;align-items:center;" onclick="ff1();">Play Video!  </div></div>
             <div style="display:flex;flex-direction:column"><p>A função print() é uma função embutida no Python 3 que permite exibir mensagens, valores de variáveis e resultados de cálculos no console durante a execução de um programa. 
 </p>
 <p>A função print() é uma das primeiras ferramentas que os iniciantes aprendem, servindo como uma ponte para ver o código funcionando em tempo real. </p>
@@ -41,8 +56,7 @@
     <section id="s1" class="features">
 <article id="projetos" class="card" style="background: #1a1a1d; padding: 40px; border-radius: 16px; border: 1px solid #333; transition: transform 0.3s;">
         <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;"> <div style="display:flex;flex-direction:column"> 
-                      <iframe loading="lazy">   <iframe src="https://www.dailymotion.com/embed/video/k1WJWYqeLc5zvlIWjFM?queue-autoplay-next=0" width="1000" 
-        height="800" allow="fullscreen" frameborder="0" </iframe> </iframe> </div>
+            <div id="if2" style="width:200px;height:150px;border:1px solid;display:flex;justify-content:center;align-items:center;" onclick="ff2();">Play Video!  </div></div> 
             <div style="display:flex;flex-direction:column"><p>A função input() é uma função embutida no Python 3 que permite solicitar e receber dados digitados pelo utilizador durante a execução do programa, pausando o código até que a tecla "Enter" seja pressionada. Permite Retorno de Texto independentemente do que o utilizador digite (números, letras ou símbolos), a função input() retorna sempre o dado como uma string (texto). Se você precisar fazer cálculos matemáticos com esse valor, deverá convertê-lo primeiro, usando funções como int() ou float().
 Mensagem de Prompt: Você pode incluir uma mensagem de texto dentro dos parênteses, como input("Nome: "), para orientar o utilizador sobre o que deve ser inserido. Essa mensagem aparece no console antes da espera pela digitação.
 Armazenamento: O valor digitado geralmente é atribuído a uma variável para ser utilizado posteriormente no código, por exemplo: nome = input("Nome? ").
@@ -60,13 +74,43 @@ Diferença do print: Enquanto print() exibe informações na tela (saída), inpu
     <script>
 
         var if1 = document.querySelector("#if1");
-        var if2 = document.querySelector("#if2");        
-        if2.style.display="none"
+        var if2 = document.querySelector("#if2");
+        
+        function timeOUT1(parameter,time){
+           parameter.classList.add("animation1");setTimeout(()=>{parameter.classList.remove("animation1")},time);
+        }
         
         function ff1(){
+                timeOUT1(if1,600);
+                if1.textContent="";
+                iframe=document.createElement("iframe");
+                iframe.src="https://www.dailymotion.com/embed/video/k6TOorV7Lt5FwOIWjcy?autoplay=0?queue-autoplay-next=0"
+                iframe.width="1000"
+                iframe.height="800"
+                iframe.allow="fullscreen"
+                if1.appendChild(iframe);
+                if1.style.width="1000px";
+                if1.style.height="800px";
 
-                if1.style.display="none";if2.style.display="display";
         }        
+        
+ 
+         function ff2(){
+                timeOUT1(if2,600);
+                if2.classList.add("animation1");setTimeout(()=>{if2.classList.remove("animation1")},600);
+                if2.textContent="";
+                iframe=document.createElement("iframe");
+                iframe.src="https://www.dailymotion.com/embed/video/k1WJWYqeLc5zvlIWjFM?autoplay=0?queue-autoplay-next=0"
+                iframe.width="1000"
+                iframe.height="800"
+                iframe.allow="fullscreen"
+                if2.appendChild(iframe);
+                if2.style.width="1000px";
+                if2.style.height="800px";
+                
+        }        
+        
+      
  
         document.querySelectorAll('article').forEach(card => {
             card.addEventListener('mouseenter', () => card.style.transform = 'translateY(-5px)');
