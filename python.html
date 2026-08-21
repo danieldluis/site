@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -39,11 +40,11 @@
 
  	<h1>Lógica de Programação com Python</h1>
 
-    <section id="s2" class="features">
+    <section class="features">
 <article id="projetos" class="card" style="background: #1a1a1d; padding: 40px; border-radius: 16px; border: 1px solid #333; transition: transform 0.3s;">
         <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;"> <div style="display:flex;flex-direction:column"> 
-            <div id="if1" style="width:200px;height:150px;border:1px solid;display:flex;justify-content:center;align-items:center;" onclick="ff1();">Play Video!  </div></div>
-            <div style="display:flex;flex-direction:column"><p>A função print() é uma função embutida no Python 3 que permite exibir mensagens, valores de variáveis e resultados de cálculos no console durante a execução de um programa. 
+            <div id="if1" style="width:200px;height:150px;border:1px ridge;border-radius:10px/20px;background:#790d0d;display:flex;justify-content:center;align-items:center;font-size:40px;" onclick="ff1();">▶️</div></div>
+            <div style="display:flex;flex-direction:column"><h2 style="margin:10px;">print()</h2><p>A função print() é uma função embutida no Python 3 que permite exibir mensagens, valores de variáveis e resultados de cálculos no console durante a execução de um programa. 
 </p>
 <p>A função print() é uma das primeiras ferramentas que os iniciantes aprendem, servindo como uma ponte para ver o código funcionando em tempo real. </p>
 <p>Para imprimir múltiplos itens na mesma linha, separe-os por vírgula, como em print("Olá", "Mundo"), que resultará em Olá Mundo. </p>
@@ -53,20 +54,88 @@
 
     </section>
 
-    <section id="s1" class="features">
+    <section class="features">
 <article id="projetos" class="card" style="background: #1a1a1d; padding: 40px; border-radius: 16px; border: 1px solid #333; transition: transform 0.3s;">
         <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;"> <div style="display:flex;flex-direction:column"> 
-            <div id="if2" style="width:200px;height:150px;border:1px solid;display:flex;justify-content:center;align-items:center;" onclick="ff2();">Play Video!  </div></div> 
-            <div style="display:flex;flex-direction:column"><p>A função input() é uma função embutida no Python 3 que permite solicitar e receber dados digitados pelo utilizador durante a execução do programa, pausando o código até que a tecla "Enter" seja pressionada. Permite Retorno de Texto independentemente do que o utilizador digite (números, letras ou símbolos), a função input() retorna sempre o dado como uma string (texto). Se você precisar fazer cálculos matemáticos com esse valor, deverá convertê-lo primeiro, usando funções como int() ou float().
-Mensagem de Prompt: Você pode incluir uma mensagem de texto dentro dos parênteses, como input("Nome: "), para orientar o utilizador sobre o que deve ser inserido. Essa mensagem aparece no console antes da espera pela digitação.
-Armazenamento: O valor digitado geralmente é atribuído a uma variável para ser utilizado posteriormente no código, por exemplo: nome = input("Nome? ").
-Diferença do print: Enquanto print() exibe informações na tela (saída), input() captura informações do teclado (entrada), tornando os programas interativos.</p>
+            <div id="if2" style="width:200px;height:150px;border:1px ridge;border-radius:10px/20px;;background:#790d0d;display:flex;justify-content:center;align-items:center;font-size:40px;" onclick="ff2();">▶️</div></div>
+            <div style="display:flex;flex-direction:column"><h2 style="margin:10px;">input()</h2><p>A função input() é uma função embutida no Python 3 que permite solicitar e receber dados digitados pelo utilizador durante a execução do programa, pausando o código até que a tecla "Enter" seja pressionada. Permite Retorno de Texto independentemente do que o utilizador digite (números, letras ou símbolos), a função input() retorna sempre o dado como uma string (texto). Se precisar de fazer cálculos aritméticos com esse valor, deverá convertê-lo primeiro, usando funções como int() ou float().
+Mensagem de Prompt em que se pode incluir uma mensagem de texto dentro dos parênteses, como input("Nome: "), para orientar o utilizador sobre o que deve ser inserido. Essa mensagem aparece no console antes da espera pela digitação. O valor digitado geralmente é atribuído a uma variável para ser utilizado posteriormente no código, por exemplo: nome = input("Nome? "). </p>
+<p>Enquanto print() exibe informações na tela (saída), input() captura informações do teclado (entrada), tornando os programas interativos.</p>
 </div></div>
         </article>
 
     </section>
+    
+    
+    <section class="features">
+<article id="projetos" class="card" style="background: #1a1a1d; padding: 40px; border-radius: 16px; border: 1px solid #333; transition: transform 0.3s;">
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;"> <div style="display:flex;flex-direction:column"> 
+            <div id="if3" style="width:200px;height:150px;border:1px ridge;border-radius:10px/20px;;background:#790d0d;display:flex;justify-content:center;align-items:center;font-size:40px;" onclick="ff3();">▶️</div></div>
+            <div style="display:flex;flex-direction:column"><h2 style="margin:10px;">Variáveis e Tipos de Dados</h2><p>As variáveis em Python funcionam como referências a objetos na memória, sendo criadas automaticamente ao receberem um valor (tipagem dinâmica).  Não é necessário declarar o tipo explicitamente; o interpretador inferi o tipo com base no valor atribuído, permitindo que uma variável armazene diferentes tipos de dados ao longo da execução.
 
+Os principais tipos de dados incluem:</p>
 
+<ul><li style="margin-left:50px;"><p>Numéricos: int (inteiros), float (ponto flutuante/decimal) e complex (números complexos). </p></li>
+<li style="margin-left:50px;"><p>Sequências: str (strings/texto), list (listas mutáveis), tuple (tuplas imutáveis) e range.</p></li>
+<li style="margin-left:50px;"><p>Mapeamento: dict (dicionários com pares chave-valor). </p></li>
+<li style="margin-left:50px;"><p>Outros: bool (booleanos: True/False), set/frozenset (conjuntos) e NoneType (valor nulo).</p> </li></ul>
+<p>A conversão de tipos (casting) é realizada através de funções específicas como int(), float(), str() e bool().  O Python realiza conversões implícitas automáticas em operações mistas (ex: soma de int com float resulta em float), mas conversões explícitas são necessárias para operações incompatíveis, como transformar entrada de texto em número para cálculos matemáticos.</p>
+</div></div>
+        </article>
+
+    </section>
+    
+    
+    <section class="features">
+<article id="projetos" class="card" style="background: #1a1a1d; padding: 40px; border-radius: 16px; border: 1px solid #333; transition: transform 0.3s;">
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;"> <div style="display:flex;flex-direction:column"> 
+            <div id="if4" style="width:200px;height:150px;border:1px ridge;border-radius:10px/20px;background:#790d0d;display:flex;justify-content:center;align-items:center;font-size:40px;" onclick="ff4();">▶️</div></div>
+            <div style="display:flex;flex-direction:column"><h2 style="margin:10px;">Condições IF</h2><p>As estruturas condicionais em Python, como if, elif e else, controlam o fluxo do programa executando blocos de código apenas quando certas condições são avaliadas como verdadeiras.  O comando if testa a condição principal; se for falsa, o programa verifica blocos elif (abreviação de "else if") para condições alternativas, e executa o bloco else se nenhuma das anteriores for atendida.  A indentação é obrigatória para definir quais linhas pertencem a cada bloco condicional. 
+Conceitos Importantes:</p>
+
+<ul><li style="margin-left:50px;"><p>Operadores: Use == para comparação (retorna True/False) e = para atribuição.</p></li>
+<li style="margin-left:50px;"><p>Valores Falsy: O Python trata valores como 0, None, "", [] e False como falsos em condições. </p></li>
+<li style="margin-left:50px;"><p>Ternário: Para decisões simples em uma linha, use valor_se_verdadeiro if condição else valor_se_falso. </p></li>
+<li style="margin-left:50px;"><p>Aninhamento: É possível colocar estruturas if dentro de outras, mas o excesso deve ser evitado para manter a legibilidade. </p> </li>
+<p>Essas estruturas são fundamentais para tomar decisões dinâmicas no código, permitindo que o programa reaja diferentemente conforme os dados ou entradas do utilizador.</p>
+</div></div>
+        </article>
+
+    </section>
+    
+    
+    <section class="features">
+<article id="projetos" class="card" style="background: #1a1a1d; padding: 40px; border-radius: 16px; border: 1px solid #333; transition: transform 0.3s;">
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;"> <div style="display:flex;flex-direction:column"> 
+            <div id="if5" style="width:200px;height:150px;border:1px ridge;border-radius:10px/20px;;background:#790d0d;display:flex;justify-content:center;align-items:center;font-size:40px;" onclick="ff5();">▶️</div></div>
+            <div style="display:flex;flex-direction:column"><h2 style="margin:10px;">Ciclo While</h2><p>O comando while em Python executa um bloco de código repetidamente enquanto uma condição específica for avaliada como verdadeira (True).  Diferente do for, que itera sobre uma sequência definida, o while é ideal para situações onde o número de repetições é desconhecido ou depende de uma condição dinâmica. 
+            A estrutura verifica a condição antes de cada iteração. Se a condição for falsa inicialmente, o bloco de código nunca será executado. A indentação é obrigatória para definir o escopo do loop.</p>
+<p>Uma característica única do Python é a possibilidade de usar um bloco else após o while.  Este bloco é executado apenas se o loop terminar naturalmente (quando a condição se torna falsa). Se o loop for interrompido prematuramente por um comando break, o bloco else é ignorado. </p>
+<p>Para gerenciar a execução do loop, utilizam-se comandos específicos como o break que encerra o loop imediatamente, transferindo o controle para a primeira linha após o bloco e <strong>continue</strong>, o qual interrompe a iteração atual e retorna ao início do loop para reavaliar a condição, pulando o código restante naquela volta.</p>
+</div></div>
+        </article>
+
+    </section>
+    
+    
+    <section class="features">
+<article id="projetos" class="card" style="background: #1a1a1d; padding: 40px; border-radius: 16px; border: 1px solid #333; transition: transform 0.3s;">
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;"> <div style="display:flex;flex-direction:column"> 
+            <div id="if6" style="width:200px;height:150px;border:1px ridge;border-radius:10px/20px;;background:#790d0d;display:flex;justify-content:center;align-items:center;font-size:40px;" onclick="ff6();">▶️</div></div>
+            <div style="display:flex;flex-direction:column"><h2 style="margin:10px;">Ciclo For</h2><p>O comando for em Python é utilizado para iterar sobre uma sequência (como listas, tuplas, dicionários, conjuntos ou strings) ou qualquer outro objeto iterável. Diferente do while, que depende de uma condição booleana, o for executa o bloco de código uma vez para cada item na sequência, tornando-o mais conciso e seguro contra loops infinitos acidentais quando se trabalha com coleções de dados.</p>
+            
+ <p>A função range(início, fim, passo) é o que mais se aproxima do for tradicional pois permite controlar o índice e o número exato de repetições:</p>
+<ul><li style="margin-left:50px;"><p>inicio: Opcional, padrão é 0.</p></li>
+<li style="margin-left:50px;"><p>fim: Obrigatório (o loop para antes de atingir este valor).</p></li>
+<li style="margin-left:50px;"><p>passo: Opcional, padrão é 1. Define o incremento.</p></li></ul>
+
+</p>
+</div></div>
+        </article>
+
+    </section>
+    
+ 
    <footer style="text-align: center; padding: 40px; color: #666; border-top: 1px solid #333; margin-top: 60px;">
         <p>&copy; 2026 Daniel D Luis</p>
     </footer>
@@ -75,6 +144,10 @@ Diferença do print: Enquanto print() exibe informações na tela (saída), inpu
 
         var if1 = document.querySelector("#if1");
         var if2 = document.querySelector("#if2");
+        var if3 = document.querySelector("#if3");
+        var if4 = document.querySelector("#if4");
+        var if5 = document.querySelector("#if5");
+        var if6 = document.querySelector("#if6");
         
         function timeOUT1(parameter,time){
            parameter.classList.add("animation1");setTimeout(()=>{parameter.classList.remove("animation1")},time);
@@ -94,6 +167,8 @@ Diferença do print: Enquanto print() exibe informações na tela (saída), inpu
 
         }        
         
+                
+        
  
          function ff2(){
                 timeOUT1(if2,600);
@@ -110,6 +185,68 @@ Diferença do print: Enquanto print() exibe informações na tela (saída), inpu
                 
         }        
         
+        
+        function ff3(){
+                timeOUT1(if3,600);
+                if3.textContent="";
+                iframe=document.createElement("iframe");
+                iframe.src="https://www.dailymotion.com/embed/video/k3YgjxpZx02g5GIYebI?autoplay=0?queue-autoplay-next=0"
+                iframe.width="1000"
+                iframe.height="800"
+                iframe.allow="fullscreen"
+                if3.appendChild(iframe);
+                if3.style.width="1000px";
+                if3.style.height="800px";
+
+        }        
+        
+        
+        function ff4(){
+                timeOUT1(if4,600);
+                if4.textContent="";
+                iframe=document.createElement("iframe");
+                iframe.src="https://www.dailymotion.com/embed/video/k7KQMGZf2WvwqCIYh3Q?autoplay=0?queue-autoplay-next=0"
+                iframe.width="1000"
+                iframe.height="800"
+                iframe.allow="fullscreen"
+                if4.appendChild(iframe);
+                if4.style.width="1000px";
+                if4.style.height="800px";
+
+        }     
+        
+
+        function ff5(){
+                timeOUT1(if5,600);
+                if5.textContent="";
+                iframe=document.createElement("iframe");
+                iframe.src="https://www.dailymotion.com/embed/video/k5sWXOoAxoPo6oIYh9M?autoplay=0?queue-autoplay-next=0"
+                iframe.width="1000"
+                iframe.height="800"
+                iframe.allow="fullscreen"
+                if5.appendChild(iframe);
+                if5.style.width="1000px";
+                if5.style.height="800px";
+
+        }        
+        
+        
+        
+        function ff6(){
+                timeOUT1(if6,600);
+                if6.textContent="";
+                iframe=document.createElement("iframe");
+                iframe.src="https://www.dailymotion.com/embed/video/k5wvLyit1ofxDYIYhg2?autoplay=0?queue-autoplay-next=0"
+                iframe.width="1000"
+                iframe.height="800"
+                iframe.allow="fullscreen"
+                if6.appendChild(iframe);
+                if6.style.width="1000px";
+                if6.style.height="800px";
+
+        }        
+        
+
       
  
         document.querySelectorAll('article').forEach(card => {
