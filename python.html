@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-PT">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +8,13 @@
  <style>
   p{text-align:justify;color: #ccc; line-height: 1.6;font-size:14px;text-align:justify;margin-left:10px;}
   .animation1{
-    animation:a1 600ms ease-in;
+    animation:a1 10ms ease-in;
   }
   
   @keyframes a1{
   
   0%{width:300px;}
   0%{height:300px;}
-  50%{width:600px;}
-  50%{height:500px;}
   100%{width:1000px;}
   100%{height:800px;}
   
@@ -135,8 +132,26 @@ Conceitos Importantes:</p>
 
     </section>
     
- 
-   <footer style="text-align: center; padding: 40px; color: #666; border-top: 1px solid #333; margin-top: 60px;">
+    <section class="features">
+<article id="projetos" class="card" style="background: #1a1a1d; padding: 40px; border-radius: 16px; border: 1px solid #333; transition: transform 0.3s;">
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;"> <div style="display:flex;flex-direction:column"> 
+            <div id="if7" style="width:200px;height:150px;border:1px ridge;border-radius:10px/20px;;background:#790d0d;display:flex;justify-content:center;align-items:center;font-size:40px;" onclick="ff7();">▶️</div></div>
+            <div style="display:flex;flex-direction:column"><h2 style="margin:10px;">Match-Case</h2><p>O comando match (ou match-case) foi introduzido no Python 3.10 como uma estrutura de correspondência de padrões (pattern matching) que substitui longas cadeias de if, elif e else, tornando o código mais legível e organizado.</p>
+            
+<p>Principais Características:</p>
+<ul><li style="margin-left:50px;"><p>Sintaxe Básica: Utiliza a palavra-chave match seguida da variável ou expressão, e os blocos case para definir os padrões.</p></li>
+<li style="margin-left:50px;"><p>Predefinição (_): O padrão _ atua como um caso predefinido (equivalente ao else), executando-se quando nenhum outro caso anterior corresponder.</p></li>
+<li style="margin-left:50px;"><p>Padrões Complexos: Permite verificar não apenas valores exatos, mas também estruturas de dados (como listas, dicionários e tuplas) e tipos de dados.</p></li>
+<li style="margin-left:50px;"><p>Operador OU (|): Permite combinar múltiplos valores num único case usando o operador de pipe.</p></li>
+<li style="margin-left:50px;"><p>Condições (if): Cada case pode ter uma condição adicional após a palavra-chave if para refinar a correspondência.</p></li></ul>
+
+</p>
+</div></div>
+        </article>
+
+    </section>
+    
+    <footer style="text-align: center; padding: 40px; color: #666; border-top: 1px solid #333; margin-top: 60px;">
         <p style="text-align: center;">&copy; 2026 Daniel D Luis</p>
     </footer>
 
@@ -148,6 +163,7 @@ Conceitos Importantes:</p>
         var if4 = document.querySelector("#if4");
         var if5 = document.querySelector("#if5");
         var if6 = document.querySelector("#if6");
+        var if7 = document.querySelector("#if7");
         
         function timeOUT1(parameter,time){
            parameter.classList.add("animation1");setTimeout(()=>{parameter.classList.remove("animation1")},time);
@@ -246,7 +262,19 @@ Conceitos Importantes:</p>
 
         }        
         
+        function ff7(){
+                timeOUT1(if7,600);
+                if7.textContent="";
+                iframe=document.createElement("iframe");
+                iframe.src="https://www.dailymotion.com/embed/video/k4Of7uVppGjPfNIYhiy?autoplay=0?queue-autoplay-next=0"
+                iframe.width="1000"
+                iframe.height="800"
+                iframe.allow="fullscreen"
+                if7.appendChild(iframe);
+                if7.style.width="1000px";
+                if7.style.height="800px";
 
+        }       
       
  
         document.querySelectorAll('article').forEach(card => {
