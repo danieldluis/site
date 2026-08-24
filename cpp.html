@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Luis</title>
+    <link rel="stylesheet" href="style.css">
+ <style>
+  p{text-align:justify;color: #ccc; line-height: 1.6;font-size:14px;text-align:justify;margin-left:10px;}
+  .animation1{
+    animation:a1 10ms ease-in;
+  }
+  
+  @keyframes a1{
+  
+  0%{width:300px;}
+  0%{height:300px;}
+  100%{width:1000px;}
+  100%{height:800px;}
+  
+  }
+  
+  
+ </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">DDL</a>
+        <nav>
+            <ul>
+                <li><a style="cursor:pointer" href="index.html">Início</a></li>
+ 
+            </ul>
+        </nav>
+    </header>
+
+ 	<h1>Lógica de Programação com C++</h1>
+
+    <section class="features">
+<article id="projetos" class="card" style="background: #1a1a1d; padding: 40px; border-radius: 16px; border: 1px solid #333; transition: transform 0.3s;">
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;"> <div style="display:flex;flex-direction:column"> 
+            <div id="if1" style="width:200px;height:150px;border:1px ridge;border-radius:10px/20px;background:#790d0d;display:flex;justify-content:center;align-items:center;font-size:40px;" onclick="ff1();">▶️</div></div>
+            <div style="display:flex;flex-direction:column"><h2 style="margin:10px;">cout()</h2><p>O cout (abreviação de "character output") é um objeto da biblioteca padrão <iostream> em C++ utilizado para enviar dados formatados para a saída padrão, geralmente a tela do console. Funciona através do operador de inserção <<, que encadeia variáveis, literais e manipuladores (como std::endl para quebra de linha) em uma única expressão de fluxo, convertendo automaticamente diferentes tipos de dados para sua representação textual. Diferente de funções antigas como printf, o cout é tipado e extensível, sendo o método padrão e mais seguro para exibição de resultados em programas modernos de C++. </p>
+            </div></div>
+        </article>
+
+    </section>
+
+    <section class="features">
+<article id="projetos" class="card" style="background: #1a1a1d; padding: 40px; border-radius: 16px; border: 1px solid #333; transition: transform 0.3s;">
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;"> <div style="display:flex;flex-direction:column"> 
+            <div id="if2" style="width:200px;height:150px;border:1px ridge;border-radius:10px/20px;;background:#790d0d;display:flex;justify-content:center;align-items:center;font-size:40px;" onclick="ff2();">▶️</div></div>
+            <div style="display:flex;flex-direction:column"><h2 style="margin:10px;">cin()</h2><p>O cin (abreviação de "character input") é um objeto da biblioteca padrão <iostream> em C++ utilizado para ler dados da entrada padrão, geralmente o teclado. Funciona através do operador de extração >>, que extrai valores do fluxo de entrada e os armazena nas variáveis fornecidas, convertendo automaticamente o texto digitado para o tipo de dado da variável de destino (como int, float ou char). A leitura com cin ignora automaticamente espaços em branco anteriores (como espaços, tabulações e quebras de linha) e para ao encontrar o próximo espaço em branco, sendo o método padrão para interação com o usuário em programas console, frequentemente usado em conjunto com cout para criar interfaces de entrada e saída completas.</p>
+</div></div>
+        </article>
+
+    </section>
+    
+    
+    <section class="features">
+<article id="projetos" class="card" style="background: #1a1a1d; padding: 40px; border-radius: 16px; border: 1px solid #333; transition: transform 0.3s;">
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;"> <div style="display:flex;flex-direction:column"> 
+            <div id="if3" style="width:200px;height:150px;border:1px ridge;border-radius:10px/20px;;background:#790d0d;display:flex;justify-content:center;align-items:center;font-size:40px;" onclick="ff3();">▶️</div></div>
+            <div style="display:flex;flex-direction:column"><h2 style="margin:10px;">Variáveis e Tipos de Dados</h2><p>Em C++, variáveis são espaços nomeados na memória utilizados para armazenar dados, sendo obrigatório declarar seu tipo antes do uso para definir quanto espaço ocupar e como interpretar seu conteúdo.  A linguagem é fortemente tipada, oferecendo tipos primitivos fundamentais como int (números inteiros), float e double (números reais/ponto flutuante com precisões distintas), char (caracteres únicos), bool (valores lógicos verdadeiro/falso) e void (ausência de tipo). A sintaxe de declaração segue o padrão tipo nome;, permitindo inicialização imediata (int x = 10;) ou atribuição posterior, e exige que os identificadores comecem com letra ou sublinhado, distinguindo maiúsculas de minúsculas e respeitando palavras reservadas.</p>
+</div></div>
+        </article>
+
+    </section>
+    
+    
+    <section class="features">
+<article id="projetos" class="card" style="background: #1a1a1d; padding: 40px; border-radius: 16px; border: 1px solid #333; transition: transform 0.3s;">
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;"> <div style="display:flex;flex-direction:column"> 
+            <div id="if4" style="width:200px;height:150px;border:1px ridge;border-radius:10px/20px;background:#790d0d;display:flex;justify-content:center;align-items:center;font-size:40px;" onclick="ff4();">▶️</div></div>
+            <div style="display:flex;flex-direction:column"><h2 style="margin:10px;">Condições IF</h2><p>A condição if em C++ é uma estrutura de controle de fluxo que executa um bloco de código específico apenas se uma expressão lógica avaliada retornar verdadeira (diferente de zero). Sua sintaxe básica <strong>if (condição) { ... }</strong> permite tomar decisões no programa, podendo ser expandida com else para definir uma ação alternativa quando a condição é falsa, ou else if para verificar múltiplas condições sequencialmente. É fundamental para criar lógica condicional, validar dados e controlar a execução do programa com base em estados variáveis ou entradas do usuário.</p>
+</div></div>
+        </article>
+
+    </section>
+    
+    
+    <section class="features">
+<article id="projetos" class="card" style="background: #1a1a1d; padding: 40px; border-radius: 16px; border: 1px solid #333; transition: transform 0.3s;">
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;"> <div style="display:flex;flex-direction:column"> 
+            <div id="if5" style="width:200px;height:150px;border:1px ridge;border-radius:10px/20px;;background:#790d0d;display:flex;justify-content:center;align-items:center;font-size:40px;" onclick="ff5();">▶️</div></div>
+            <div style="display:flex;flex-direction:column"><h2 style="margin:10px;">Ciclo While</h2><p>O ciclo while em C++ é uma estrutura de repetição que executa um bloco de código enquanto uma condição específica permanecer verdadeira, avaliando-a antes de cada iteração. Diferente do for, ele não possui sintaxe embutida para inicialização ou atualização de variáveis, sendo ideal para situações onde o número de repetições é desconhecido e depende de eventos externos ou alterações de estado durante a execução. Se a condição for falsa inicialmente, o bloco de código não é executado nenhuma vez, exigindo cuidado para evitar loops infinitos caso a condição nunca se torne falsa.</p>
+</div></div>
+        </article>
+
+    </section>
+    
+    
+    <section class="features">
+<article id="projetos" class="card" style="background: #1a1a1d; padding: 40px; border-radius: 16px; border: 1px solid #333; transition: transform 0.3s;">
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;"> <div style="display:flex;flex-direction:column"> 
+            <div id="if6" style="width:200px;height:150px;border:1px ridge;border-radius:10px/20px;;background:#790d0d;display:flex;justify-content:center;align-items:center;font-size:40px;" onclick="ff6();">▶️</div></div>
+            <div style="display:flex;flex-direction:column"><h2 style="margin:10px;">Ciclo For</h2><p>O ciclo for em C++ é uma estrutura de controle de fluxo projetada para executar repetições quando o número de iterações é conhecido ou controlado por uma variável de contagem.  Sua sintaxe padrão <i>for (inicialização; condição; atualização)</i> permite definir variáveis locais ao escopo do laço, avaliar uma condição de parada e modificar o estado do iterador a cada passo, sendo equivalente a um laço while mas mais conciso. É amplamente utilizado para iterar sobre arrays, realizar contagens simples ou processar elementos de coleções, podendo também incluir múltiplas variáveis de controle ou operações complexas nas expressões de inicialização e atualização. 
+
+</p>
+</div></div>
+        </article>
+
+    </section>
+    
+ 
+    
+    <footer style="text-align: center; padding: 40px; color: #666; border-top: 1px solid #333; margin-top: 60px;">
+        <p style="text-align: center;">&copy; 2026 Daniel D Luis</p>
+    </footer>
+
+    <script>
+
+        var if1 = document.querySelector("#if1");
+        var if2 = document.querySelector("#if2");
+        var if3 = document.querySelector("#if3");
+        var if4 = document.querySelector("#if4");
+        var if5 = document.querySelector("#if5");
+        var if6 = document.querySelector("#if6");
+ 
+        
+        function timeOUT1(parameter,time){
+           parameter.classList.add("animation1");setTimeout(()=>{parameter.classList.remove("animation1")},time);
+        }
+        
+        function ff1(){
+                timeOUT1(if1,600);
+                if1.textContent="";
+                iframe=document.createElement("iframe");
+                iframe.src="https://www.dailymotion.com/embed/video/kSuewHwfgZ9XaHJ3kGi?autoplay=0?queue-autoplay-next=0"
+                iframe.width="1000"
+                iframe.height="800"
+                iframe.allow="fullscreen"
+                if1.appendChild(iframe);
+                if1.style.width="1000px";
+                if1.style.height="800px";
+
+        }        
+        
+                
+        
+ 
+         function ff2(){
+                timeOUT1(if2,600);
+                if2.classList.add("animation1");setTimeout(()=>{if2.classList.remove("animation1")},600);
+                if2.textContent="";
+                iframe=document.createElement("iframe");
+                iframe.src="https://www.dailymotion.com/embed/video/k6vF6sQfYaMZt0J3kLI?autoplay=0?queue-autoplay-next=0"
+                iframe.width="1000"
+                iframe.height="800"
+                iframe.allow="fullscreen"
+                if2.appendChild(iframe);
+                if2.style.width="1000px";
+                if2.style.height="800px";
+                
+        }        
+        
+        
+        function ff3(){
+                timeOUT1(if3,600);
+                if3.textContent="";
+                iframe=document.createElement("iframe");
+                iframe.src="https://www.dailymotion.com/embed/video/k3HUJaWO2eLL7UJ3m1Y?autoplay=0?queue-autoplay-next=0"
+                iframe.width="1000"
+                iframe.height="800"
+                iframe.allow="fullscreen"
+                if3.appendChild(iframe);
+                if3.style.width="1000px";
+                if3.style.height="800px";
+
+        }        
+        
+        
+        function ff4(){
+                timeOUT1(if4,600);
+                if4.textContent="";
+                iframe=document.createElement("iframe");
+                iframe.src="https://www.dailymotion.com/embed/video/k2j2cY61GqqxHZJ3l5U?autoplay=0?queue-autoplay-next=0"
+                iframe.width="1000"
+                iframe.height="800"
+                iframe.allow="fullscreen"
+                if4.appendChild(iframe);
+                if4.style.width="1000px";
+                if4.style.height="800px";
+
+        }     
+        
+
+        function ff5(){
+                timeOUT1(if5,600);
+                if5.textContent="";
+                iframe=document.createElement("iframe");
+                iframe.src="https://www.dailymotion.com/embed/video/k3nfDQOHGwmdv3J3lOi?autoplay=0?queue-autoplay-next=0"
+                iframe.width="1000"
+                iframe.height="800"
+                iframe.allow="fullscreen"
+                if5.appendChild(iframe);
+                if5.style.width="1000px";
+                if5.style.height="800px";
+
+        }        
+        
+        
+        
+        function ff6(){
+                timeOUT1(if6,600);
+                if6.textContent="";
+                iframe=document.createElement("iframe");
+                iframe.src="https://www.dailymotion.com/embed/video/k5N3UTt5Yfot36J3lUG?autoplay=0?queue-autoplay-next=0"
+                iframe.width="1000"
+                iframe.height="800"
+                iframe.allow="fullscreen"
+                if6.appendChild(iframe);
+                if6.style.width="1000px";
+                if6.style.height="800px";
+
+        }        
+        
+ 
+      
+ 
+        document.querySelectorAll('article').forEach(card => {
+            card.addEventListener('mouseenter', () => card.style.transform = 'translateY(-5px)');
+            card.addEventListener('mouseleave', () => card.style.transform = 'translateY(0)');
+        });
+
+ 
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>   
+
