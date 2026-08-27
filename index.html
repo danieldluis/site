@@ -24,7 +24,7 @@
 
 	<img src="ddllogo.png">
   
-        <p>Olá eu sou o Daniel Luis, especialista em Data Science!<br>Ensino Lógica de Programação com Python!</p>
+        <p>Olá eu sou o Daniel Luis, especialista em Data Science!<br>Ensino Lógica de Programação com Python e muito mais!</p>
 
         <a href="#servicos" class="btn">Explorar Agora</a>
     </section>
@@ -46,7 +46,7 @@
  
     <!-- C++ Card -->
         <article id="cpp" class="card"  style="background: #1a1a1d; padding: 40px; border-radius: 16px; border: 1px solid #333; transition: transform 0.3s;">
-            <div style="font-size: 3rem; margin-bottom: 20px;">🇨 ➕➕</div>
+            <div style="font-size: 3rem; margin-bottom: 20px;"><span>🇨 </span><span style="font-size: 1.5rem;">➕ ➕</span></div>
             <h2 style="color: #ffe873; margin-bottom: 15px; font-size: 1.8rem;">C++</h2>
             <p style="color: #ccc; line-height: 1.6;">
          O <strong>C++</strong> é uma linguagem de programação de alto desempenho e propósito geral, criada como uma extensão da linguagem C para incluir programação orientada a objetos e controle direto de memória, sendo amplamente usada no desenvolvimento de sistemas operacionais, jogos e aplicações complexas.
@@ -55,7 +55,12 @@
  
     </section>
     
+    <section id="contato" style="text-align:center;">
 
+ <div style="font-size: 2rem; background:#223344;border-radius:8px;cursor:pointer;padding:4px;width:fit-content;display:block;margin:auto;">✉️ <a id="mailto" style="text-decoration:none;color:#448844;" href="mailto:danielluis.datascience@gmail.com">E-mail</a> </div>
+
+     </section>
+    
    <footer style="text-align: center; padding: 40px; color: #666; border-top: 1px solid #333; margin-top: 60px;">
         <p>&copy; 2026 Daniel D Luis</p>
     </footer>
@@ -70,14 +75,7 @@
 	document.getElementById('python').addEventListener('click',()=>{const link=document.createElement('a');link.href="python.html";link.target="_blank";link.click();});
 	document.getElementById('cpp').addEventListener('click',()=>{const link=document.createElement('a');link.href="cpp.html";link.target="_blank";link.click();});
   
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+ 
     </script>
 </body>
 </html>   
