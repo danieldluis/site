@@ -95,12 +95,34 @@
 <article id="projetos" class="card" style="background: #1a1a1d; padding: 40px; border-radius: 16px; border: 1px solid #333; transition: transform 0.3s;">
         <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;"> <div style="display:flex;flex-direction:column"> 
             <div id="if6" style="width:200px;height:150px;border:1px ridge;border-radius:10px/20px;;background:#790d0d;display:flex;justify-content:center;align-items:center;font-size:40px;" onclick="ff6();">▶️</div></div>
-            <div style="display:flex;flex-direction:column"><h2 style="margin:10px;">Ciclo For</h2><p>No Octave, o ciclo for itera sobre os elementos de uma expressão — tipicamente um range (ex.: 1:n), um vetor, uma matriz ou um cell array — atribuindo a cada iteração o próximo elemento (coluna) à variável de controlo e executando o corpo até esgotar a coleção; a sintaxe é for var = expressão ... endfor, e, ao contrário de uma atribuição normal, a expressão é percorrida coluna a coluna (pelo que for i = [1,3;2,4] produz dois vetores colunas [1;2] e [3;4]); o corpo pode ser interrompido com break (salta para a instrução seguinte ao endfor) ou reiniciado com continue (passa para o próximo elemento); existe também uma forma especial for [val, key] = estrutura que percorre os campos de uma struct devolvendo o nome e o valor de cada um; embora seja possível reescrever qualquer for como while, o for é preferível quando o número de iterações é conhecido a priori, pois é mais natural e menos propenso a erros de off-by-one. O vídeo demonstra of ciclo for com a forma de três argumentos do operador : — início:passo:fim — oferecendo mais controlo ao utilizador e gera o vetor [0, 20, 40, 60, 80, 100] (100 é exatamente atingido, pelo que está incluído); portanto for i = 0:20:100 ... endfor itera 6 vezes, com i assumindo sucessivamente 0, 20, 40, 60, 80 e 100.</p></li></ul>
-
-</p>
+            <div style="display:flex;flex-direction:column"><h2 style="margin:10px;">Ciclo For</h2><p>No Octave, o ciclo for itera sobre os elementos de uma expressão — tipicamente um range (ex.: 1:n), um vetor, uma matriz ou um cell array — atribuindo a cada iteração o próximo elemento (coluna) à variável de controlo e executando o corpo até esgotar a coleção; a sintaxe é for var = expressão ... endfor, e, ao contrário de uma atribuição normal, a expressão é percorrida coluna a coluna (pelo que for i = [1,3;2,4] produz dois vetores colunas [1;2] e [3;4]); o corpo pode ser interrompido com break (salta para a instrução seguinte ao endfor) ou reiniciado com continue (passa para o próximo elemento); existe também uma forma especial for [val, key] = estrutura que percorre os campos de uma struct devolvendo o nome e o valor de cada um; embora seja possível reescrever qualquer for como while, o for é preferível quando o número de iterações é conhecido a priori, pois é mais natural e menos propenso a erros de off-by-one. O vídeo demonstra of ciclo for com a forma de três argumentos do operador : — início:passo:fim — oferecendo mais controlo ao utilizador e gera o vetor [0, 20, 40, 60, 80, 100] (100 é exatamente atingido, pelo que está incluído); portanto for i = 0:20:100 ... endfor itera 6 vezes, com i assumindo sucessivamente 0, 20, 40, 60, 80 e 100.</p> 
+ 
 </div></div>
         </article>
     </section> 
+    
+
+    <section class="features">
+<article id="projetos" class="card" style="background: #1a1a1d; padding: 40px; border-radius: 16px; border: 1px solid #333; transition: transform 0.3s;">
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;"> <div style="display:flex;flex-direction:column"> 
+            <div id="if7" style="width:200px;height:150px;border:1px ridge;border-radius:10px/20px;;background:#790d0d;display:flex;justify-content:center;align-items:center;font-size:40px;" onclick="ff7();">▶️</div></div>
+            <div style="display:flex;flex-direction:column"><h2 style="margin:10px;">Editor de Scripts</h2><p>O Editor de Scripts no GNU Octave é uma ferramenta integrada à interface gráfica (GUI) que facilita a criação, edição e execução sequencial de comandos.  Pode-se aceder na aba Script Editor ou pelo menu File >> New Script e também pode ser aberto via linha de comandos digitando edit "nome_do_ficheiro". </p> 
+</div></div>
+        </article>
+    </section> 
+    
+    
+    <section class="features">
+<article id="projetos" class="card" style="background: #1a1a1d; padding: 40px; border-radius: 16px; border: 1px solid #333; transition: transform 0.3s;">
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;"> <div style="display:flex;flex-direction:column"> 
+            <div id="if8" style="width:200px;height:150px;border:1px ridge;border-radius:10px/20px;;background:#790d0d;display:flex;justify-content:center;align-items:center;font-size:40px;" onclick="ff8();">▶️</div></div>
+            <div style="display:flex;flex-direction:column"><h2 style="margin:10px;">Estrutura de uma Função em Octave</h2><p>Uma função no Octave é um bloco de código nomeado que recebe argumentos de entrada, executa uma tarefa específica e (opcionalmente) retorna valores de saída, delimitado por function ... endfunction (ou end). Diferente de um script, o escopo das variáveis internas é local — nada sai para o workspace — e a função pode ser chamada quantas vezes se quiser pelo nome da mesma. É a unidade básica de reutilização de código no Octave, análoga às funções do MATLAB.</p> 
+</div></div>
+        </article>
+    </section> 
+    
+    
+    
     
     <footer style="text-align: center; padding: 40px; color: #666; border-top: 1px solid #333; margin-top: 60px;">
         <p style="text-align: center;">&copy; 2026 Daniel D Luis</p>
@@ -114,7 +136,8 @@
         var if4 = document.querySelector("#if4");
         var if5 = document.querySelector("#if5");
         var if6 = document.querySelector("#if6");
- 
+        var if7 = document.querySelector("#if7");
+        var if8 = document.querySelector("#if8");        
         
         function timeOUT1(parameter,time){
            parameter.classList.add("animation1");setTimeout(()=>{parameter.classList.remove("animation1")},time);
@@ -213,6 +236,36 @@
 
         }        
  
+
+        function ff7(){
+                timeOUT1(if7,600);
+                if7.textContent="";
+                iframe=document.createElement("iframe");
+                iframe.src="https://www.dailymotion.com/embed/video/k2w5CpoEdEE6xAJq1yC?autoplay=0?queue-autoplay-next=0"
+                iframe.width="1000"
+                iframe.height="800"
+                iframe.allow="fullscreen"
+                if7.appendChild(iframe);
+                if7.style.width="1000px";
+                if7.style.height="800px";
+
+        }      
+        
+ 
+        function ff8(){
+                timeOUT1(if8,600);
+                if8.textContent="";
+                iframe=document.createElement("iframe");
+                iframe.src="https://www.dailymotion.com/embed/video/kcqAWm9nYpRM59JqdX0?autoplay=0?queue-autoplay-next=0"
+                iframe.width="1000"
+                iframe.height="800"
+                iframe.allow="fullscreen"
+                if8.appendChild(iframe);
+                if8.style.width="1000px";
+                if8.style.height="800px";
+
+        }    
+        
       
  
         document.querySelectorAll('article').forEach(card => {
@@ -232,4 +285,3 @@
     </script>
 </body>
 </html>   
-
