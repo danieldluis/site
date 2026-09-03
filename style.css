@@ -100,7 +100,7 @@
         }
  
         .features {
-            padding: 80px 5%;
+            padding: 40px 5%;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
@@ -112,8 +112,8 @@
             border-radius: 15px;
             border: 1px solid #333;
             transition: transform 0.3s;
-	    cursor: pointer;
-	    transition: opacity 1s ease-in-out;
+	    	cursor: pointer;
+	    	transition: opacity 1s ease-in-out;
 
 	    &:active{opacity:0.5;}
         }
