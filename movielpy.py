@@ -8,6 +8,6 @@ clip.write_gif(r"C:\Users\Daniel\Music\output.gif")
 
 
 #Parameters:
-#subclipped(start point, end point) - Dividing Clip
+#subclipped(start point, end point) - Spliting Clip
 #resized(width=480) - Resize Window of Clip
 #with_effects([vfx.MultiplySpeed(4)]) - How many times the Normal Speed
