@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Luis</title>
+    <link rel="stylesheet" href="style.css">
+ <style>
+  p{text-align:justify;color: #ccc; line-height: 1.6;font-size:14px;text-align:justify;margin-left:10px;}
+  .animation1{
+    animation:a1 10ms ease-in;
+  }
+  
+  @keyframes a1{
+  
+  0%{width:300px;}
+  0%{height:300px;}
+  100%{width:1000px;}
+  100%{height:800px;}
+  
+  }
+  
+ </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">DDL</a>
+        <nav>
+            <ul>
+                <li><a style="cursor:pointer" href="index.html">Início</a></li>
+ 
+            </ul>
+        </nav>
+    </header>
+
+ 	<h1>Projetos com Python</h1>
+	
+	    <section id="inicio" class="containerPrincipal" style="height:300px;">
+
+	<img src="ddlgif.gif" style="height:150px;border-radius:14px;box-shadow:0px 2px 2px 1px aqua,0px -1px 2px 2px aqua;">
+ 
+    </section>
+	
+    <section class="features">
+<article id="projetos" class="card" style="background: #1a1a1d; padding: 40px; border-radius: 16px; border: 1px solid #333; transition: transform 0.3s;">
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;"> <div style="display:flex;flex-direction:column"> 
+            <div id="if1" style="width:200px;height:150px;border:1px ridge;border-radius:10px/20px;background:#790d0d;display:flex;justify-content:center;align-items:center;font-size:40px;" onclick="ff1();">▶️</div></div>
+            <div style="display:flex;flex-direction:column"><h2 style="margin:10px;">Projeto - Logo Interativo com Python!</h2><p>A biblioteca Turtle em Python permite criar imagens, formas e animações fornecendo uma tela de pintura virtual onde uma "tartaruga" (cursor ou caneta) se move para desenhar linhas e padrões. Originalmente baseada na linguagem Logo, esta biblioteca gráfica pré-instalada é comumente utilizada para ensinar conceitos de programação (como loops, funções e variáveis) de forma visual e interativa. </p>
+            </div></div>
+        </article>
+
+    </section>
+
+    <section class="features">
+<article id="projetos" class="card" style="background: #1a1a1d; padding: 40px; border-radius: 16px; border: 1px solid #333; transition: transform 0.3s;">
+        <div style="display:flex;flex-direction:row;justify-content:center;align-items:center;"> <div style="display:flex;flex-direction:column"> 
+            <div id="if2" style="width:200px;height:150px;border:1px ridge;border-radius:10px/20px;;background:#790d0d;display:flex;justify-content:center;align-items:center;font-size:40px;" onclick="ff2();">▶️</div></div>
+            <div style="display:flex;flex-direction:column"><h2 style="margin:10px;">Projeto - Conversor de Mp4 em GIF com Python!</h2><p>A biblioteca MoviePy em Python permite converter vídeos, áudios e imagens entre os principais formatos suportados, como MP4, WebM, GIF, AVI, MOV e outros. Ela usa o FFmpeg (projeto de software gratuito e open-source com um conjunto de bibliotecas e ferramentas de linha de comandos para processar praticamente qualquer ficheiro ou stream de vídeo, áudio e multimédia) no background para fazer o codificação e decodificação, o que dá suporte a praticamente todos os formatos de vídeo e áudio comuns. </p>
+</div></div>
+        </article>
+
+    </section>
+    
+    <footer style="text-align: center; padding: 40px; color: #666; border-top: 1px solid #333; margin-top: 60px;">
+        <p style="text-align: center;">&copy; 2026 Daniel D Luis</p>
+    </footer>
+
+    <script>
+
+        var if1 = document.querySelector("#if1");
+        var if2 = document.querySelector("#if2");
+ 
+        
+        function timeOUT1(parameter,time){
+           parameter.classList.add("animation1");setTimeout(()=>{parameter.classList.remove("animation1")},time);
+        }
+        
+        function ff1(){
+                timeOUT1(if1,600);
+                if1.textContent="";
+                iframe=document.createElement("iframe");
+                iframe.src="https://www.dailymotion.com/embed/video/k701PGDuVN7EizJskuG?autoplay=0?queue-autoplay-next=0"
+                iframe.width="1000"
+                iframe.height="800"
+                iframe.allow="fullscreen"
+                if1.appendChild(iframe);
+                if1.style.width="1000px";
+                if1.style.height="800px";
+        }        
+ 
+         function ff2(){
+                timeOUT1(if2,600);
+                if2.classList.add("animation1");setTimeout(()=>{if2.classList.remove("animation1")},600);
+                if2.textContent="";
+                iframe=document.createElement("iframe");
+                iframe.src="https://www.dailymotion.com/embed/video/k6cExf3d0toGngJskKS?autoplay=0?queue-autoplay-next=0"
+                iframe.width="1000"
+                iframe.height="800"
+                iframe.allow="fullscreen"
+                if2.appendChild(iframe);
+                if2.style.width="1000px";
+                if2.style.height="800px";
+        }        
+        
+        document.querySelectorAll('article').forEach(card => {
+            card.addEventListener('mouseenter', () => card.style.transform = 'translateY(-5px)');
+            card.addEventListener('mouseleave', () => card.style.transform = 'translateY(0)');
+        });
+
+ 
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        
+    </script>
+</body>
+</html>   
+
