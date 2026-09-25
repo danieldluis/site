@@ -21,7 +21,8 @@
   }
 
   .ancora1{color:green;border:1px ridge #44bb44;border-radius:10px;}
-	 
+  #img1{display:none;}
+  #img2{display:none;}		 
  </style>
 </head>
 <body>
@@ -40,7 +41,8 @@
 	
 	    <section id="inicio" class="containerPrincipal" style="height:300px;">
 
-	<img src="ddlgif.gif" style="height:150px;border-radius:14px;box-shadow:0px 2px 2px 1px aqua,0px -1px 2px 2px aqua;">
+	<img src="ddlgif.gif" id="img1" style="height:150px;border-radius:14px;box-shadow:0px 2px 2px 1px aqua,0px -1px 2px 2px aqua;">
+ 	<img src="planet_simulation.gif" id="img2" style="height:150px;border-radius:14px;box-shadow:0px 2px 2px 1px aqua,0px -1px 2px 2px aqua;">
  
     </section>
 	
@@ -76,7 +78,14 @@
 
         var if1 = document.querySelector("#if1");
         var if2 = document.querySelector("#if2");
- 
+        var img1 = document.querySelector("#img1");
+        var img2 = document.querySelector("#img2");
+		
+ 		document.addEventListener('DOMContentLoaded',function(){
+			let changeGif = Math.random()>0.5 ? 0 : 1;
+			if(changeGif == 0){img1.style.display="block";img2.style.display="none";}
+			else if(changeGif == 1){img2.style.display="block";img1.style.display="none";}
+		});
         
         function timeOUT1(parameter,time){
            parameter.classList.add("animation1");setTimeout(()=>{parameter.classList.remove("animation1")},time);
